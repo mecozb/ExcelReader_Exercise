@@ -25,7 +25,7 @@ namespace ExcelReader
         private void button1_Click(object sender, EventArgs e)
         {
             conn.Open();
-            OleDbDataAdapter da = new OleDbDataAdapter("SELECT * FROM [Parametreler$]", conn);
+            OleDbDataAdapter da = new OleDbDataAdapter("SELECT * FROM [Parametreler$]", conn); //Parametreler = excel sheet name
             DataTable dt = new DataTable();
             da.Fill(dt);
             
